@@ -1,6 +1,5 @@
 package ru.netology.web;
 
-import com.github.javafaker.Faker;
 import lombok.Value;
 
 import java.time.LocalDate;
@@ -8,7 +7,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 import java.util.Random;
 
-
+import com.github.javafaker.Faker;
 
 
 public class DataGenerator {
@@ -44,14 +43,14 @@ public class DataGenerator {
     }
 
     public static class Registration {
-    private Registration(){
-    }
+        private Registration(){
+        }
 
 
-    public static UserInfo generateUser(String locale) {
-        UserInfo user = new UserInfo(generateCity(locale),generateName(locale),generatePhone(locale));
-        return user;
-    }
+        public static UserInfo generateUser(String locale) {
+            UserInfo user = new UserInfo(generateCity(locale),generateName(locale),generatePhone(locale));
+            return user;
+        }
 
     }
     @Value

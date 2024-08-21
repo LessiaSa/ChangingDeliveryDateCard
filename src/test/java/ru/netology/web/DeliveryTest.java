@@ -10,7 +10,6 @@ import java.time.Duration;
 
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
-import static ru.netology.web.DataGenerator.*;
 
 
 public class DeliveryTest {
